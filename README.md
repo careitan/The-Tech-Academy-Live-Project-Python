@@ -30,10 +30,9 @@ Here are some samples of my CSSGRID layout pattern:
      color: #080808;
      font-family: 'Arial';
      margin: 0 auto;
-     }
-
- /* The main level container for the Forum */
-     .forum-container 
+     } 
+      /* The main level container for the Forum */
+    .forum-container 
      {
         display: grid;
         grid-template-rows: 3fr 10fr 1fr;
@@ -44,8 +43,7 @@ Here are some samples of my CSSGRID layout pattern:
             "footer footer footer";
         grid-gap: .50em;
       }
-
- /* A panel layout for use inside the forum container */
+       /* A panel layout for use inside the forum container */
     .forum-panel 
     {
         display: grid;
