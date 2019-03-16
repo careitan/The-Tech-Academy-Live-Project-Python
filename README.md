@@ -31,7 +31,6 @@ Here are some samples of my CSSGRID layout pattern:
      font-family: 'Arial';
      margin: 0 auto;
      } 
-      /* The main level container for the Forum */
     .forum-container 
      {
         display: grid;
