@@ -16,8 +16,7 @@ Many of my peers were used to working with Bootstrap as a basic grid layout tool
 
 Here are some samples of my CSSGRID layout pattern:
 
- html, body
- {
+ html, body {
     height: 100%;
     margin: 0;
     padding: 0;
@@ -25,30 +24,30 @@ Here are some samples of my CSSGRID layout pattern:
 
  h1
  {
-    color: #080808;
-    font-family: 'Arial';
-    margin: 0 auto;
+ 	 color: #080808;
+     font-family: 'Arial';
+     margin: 0 auto;
  }
 
  /* The main level container for the Forum */
  .forum-container
  {
-    display: grid;
-    grid-template-rows: 3fr 10fr 1fr;
-    grid-template-columns: 1fr 10fr 1fr;
-    grid-template-areas:
-        "navbar navbar navbar"
-        "lside main rside"
-        "footer footer footer";
-    grid-gap: .50em;
+     display: grid;
+     grid-template-rows: 3fr 10fr 1fr;
+     grid-template-columns: 1fr 10fr 1fr;
+     grid-template-areas:
+         "navbar navbar navbar"
+         "lside main rside"
+         "footer footer footer";
+     grid-gap: .50em;
  }
 
  /* A panel layout for use inside the forum container */
  .forum-panel
  {
-    display: grid;
-    grid-template-rows: repeat(12, 1fr); /* 1 row for the top of the message panel. 10 rows in the middle, one row for the bottom.*/
-    grid-template-columns: 2fr 10fr 3fr;
+     display: grid;
+     grid-template-rows: repeat(12, 1fr); /* 1 row for the top of the message panel. 10 rows in the middle, one row for the bottom.*/
+     grid-template-columns: 2fr 10fr 3fr;
  }
 
 
