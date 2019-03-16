@@ -82,29 +82,28 @@ I found a nice basic blue navigation bar design on a free artist website.  I dow
 
 To quickly deploy the navigation bar to all the sites, it was incorporated into the Base.HTML source file that is extended off to create all the other web site pages in the application.
 
-{% load static from staticfiles %}
-<!doctype html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <title>{% block title %}{% endblock %}</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" type="text/css" href="{% static 'css/layout.css' %}">
-        <link rel="stylesheet" type="text/css" href="{% static 'css/navbar.css' %}">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    </head>
-    <body>
-        <main>
-            {% include "partials/navbar.html" %}
-            <div class="forum-container">
-                <header class="header-title">
-                    <h1>{% block header %}{% endblock %}</h1>
-                </header>
-                {% block content %}{% endblock %}
-            </div>
-        </main>
-    </body>
-</html>  
+     {% load static from staticfiles %}
+      <html lang="en">
+     <head>
+         <meta charset="UTF-8">
+         <title>{% block title %}{% endblock %}</title>
+         <meta name="viewport" content="width=device-width, initial-scale=1">
+         <link rel="stylesheet" type="text/css" href="{% static 'css/layout.css' %}">
+         <link rel="stylesheet" type="text/css" href="{% static 'css/navbar.css' %}">
+         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+     </head>
+     <body>
+         <main>
+             {% include "partials/navbar.html" %}
+             <div class="forum-container">
+                 <header class="header-title">
+                     <h1>{% block header %}{% endblock %}</h1>
+                 </header>
+                 {% block content %}{% endblock %}
+             </div>
+         </main>
+     </body>
+     </html> 
 
 ## Other Skills Learned
 
